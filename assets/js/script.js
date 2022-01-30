@@ -1,3 +1,6 @@
+var todaysDate = moment().format("dddd, MMM Do YYYY");
+$("#currentDay").html(todaysDate);
+
 $(document).ready(function () {
     //Click button
     $(".saveBtn").on("click", function () {
@@ -8,3 +11,4 @@ $(document).ready(function () {
         localStorage.setItem(time, text);
     })
 })
+
